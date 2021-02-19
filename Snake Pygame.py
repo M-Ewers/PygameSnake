@@ -151,7 +151,7 @@ def gameLoop():
 
         for x in snake_List[:-1]:
             if x == snake_head:
-                del snake_List[-1]
+                return game_close = True
 
         our_snake(snake_block, snake_List)
         Your_score((Length_of_snake - 1) * 100)
